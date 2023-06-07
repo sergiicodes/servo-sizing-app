@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');</style>
+</head>
+<body>
+    <form method="POST">
+        <label for="gearbox">Gearbox Selection:</label>
+        <select name="gbx" id="gbx">
+            <option value="NPL">NPL</option>
+            <option value="S">Cone Drive</option>
+            <option value="NVH">NVH</option>
+            <option value="VDH">VDH</option>
+            <option value="VH+">VH+</option>
+            <option value="TP">TP</option>
+        </select>
+        <br><br>
+
+        <div class="form-group">
+            <label for="peak_speed">Peak Speed:</label>
+            <input type="text" id="peak_speed" name="peak_speed">
+            <span>RPM</span>
+        </div>
+        <div class="form-group">
+            <label for="peak_torque_input">Peak Torque Input:</label>
+            <input type="text" id="peak_torque_input" name="peak_torque_input">
+            <span>Nm</span>
+        </div>
+        <div class="form-group">
+            <label for="peak_acceleration">Peak Acceleration:</label>
+            <input type="text" id="peak_acceleration" name="peak_acceleration">
+            <span>RPM/s</span>
+        </div>
+        <div class="form-group">
+            <label for="max_inertia">Maximum Inertia:</label>
+            <input type="text" id="max_inertia" name="max_inertia">
+            <span>kg-cm²</span>
+        </div>
+        
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
