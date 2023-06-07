@@ -33,7 +33,3 @@ To use the application, follow these steps:
 
 6. The page will display a table of suitable combinations of gearboxes and servos based on your input criteria:
 ![image](https://github.com/sergiicodes/servo-sizing-app/assets/79073281/7ab687eb-bc7d-40c2-a963-8c568b5e9ebc)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
