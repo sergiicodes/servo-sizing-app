@@ -28,5 +28,12 @@ To use the application, follow these steps:
 1. Ensure that the necessary database files (`AnalyzerSelection.xlsx`) are in the correct location on your local machine.
 2. Run the Flask application (`app.py`).
 3. Navigate to the displayed local URL (usually `localhost:5000`) in your web browser.
-4. Input your selection criteria into the form on the web page and submit the form.
-5. The page will display a table of suitable combinations of gearboxes and servos based on your input criteria.
+4. Input your selection criteria into the form on the web page and submit the form:
+![image](https://github.com/sergiicodes/servo-sizing-app/assets/79073281/9c3be226-6fa4-4fc6-acba-0c96fa2a09c8)
+
+6. The page will display a table of suitable combinations of gearboxes and servos based on your input criteria:
+![image](https://github.com/sergiicodes/servo-sizing-app/assets/79073281/7ab687eb-bc7d-40c2-a963-8c568b5e9ebc)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
