@@ -74,7 +74,6 @@ def index():
                 
                 combination = None
                 
-                #mask = (servo_percentage_speed <= 80) & (servo_percentage_peak_torque <= 80) & (gbx_speed_protect <= 80) & (gbx_torque_protect <= 80) & (servo_percentage_peak_torque >= 0) 
                 if (servo_percentage_speed <= 80) and (servo_percentage_peak_torque <= 80) and (gbx_speed_protect <= 80) and (gbx_torque_protect <= 80) and (servo_percentage_peak_torque >= 0) and (inertia_ratio <= 10):
                     combination = (servo_percentage_speed, servo_percentage_peak_torque)      
 
