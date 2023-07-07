@@ -2,24 +2,28 @@
 
 ## Project Description
 
-In my day to day job as a Research & Development Engineer, I am tasked with observing either mechanical components or assemblies to machine/project. Here's an example of a given project I would be working on:
+In my day-to-day role as a Research & Development Engineer, I am often tasked with observing mechanical components and assemblies for various machine and project applications. Here's an example of a given project I would be working on:
 ![image](https://github.com/sergiicodes/servo-sizing-app/assets/79073281/8c79e3d5-50be-4bcb-a1a2-91750caa03e4)
   
 And then here's an assembly/part within the project: 
 ![image](https://github.com/sergiicodes/servo-sizing-app/assets/79073281/3c9c1513-6e27-4b91-b37d-82f47b855f01)
 
-More specifically, I am in charge of ensuring that the servo motor and gearbox combination that will be used in the particular assembly is capable of the given application. The brand of servos I use at work are [Allen Bradley](https://www.rockwellautomation.com/en-us/products/hardware/allen-bradley/motion-control/rotary-servo-motors.html) and the brand of gearboxes I use are [WITTENSTEIN alpha
-](https://alpha.wittenstein-us.com/). I created this web-app to improve on the [Motion Analyzer](https://motionanalyzer.rockwellautomation.com/)  tool used for sizing and selecting motor and drive solutions. I found Motion Analyzer to be a very manual tool, and I wanted to "automate" the process of finding the right servo and gearbox combination.
+To streamline the process of selecting the optimal servo motor and gearbox combination, I have developed the Gearbox-Servo Selection Web Application. This web application caters to Mechanical Systems Engineers and Motion Control Engineers specializing in analyzing and designing mechanical systems involving motion, specifically with [Allen Bradley](https://www.rockwellautomation.com/en-us/products/hardware/allen-bradley/motion-control/rotary-servo-motors.html) servo motors and [WITTENSTEIN alpha](https://alpha.wittenstein-us.com/) gearboxes. By automating the selection process, the web application addresses the challenges of manual calculations and time-consuming searches for suitable servo and gearbox combinations, improving on the [Motion Analyzer](https://motionanalyzer.rockwellautomation.com/)  tool used for sizing and selecting motor and drive solutions. I found Motion Analyzer to be a very manual tool, and I wanted to "automate" the process of finding the right servo and gearbox combination.
 
-This project is a web application designed to aid in the selection of suitable gearbox and servo systems based on given input criteria. Users input their criteria (including peak speed, peak torque input, peak acceleration, and maximum inertia), and the application cross-references these inputs with a provided database to offer suitable options. The resulting selections, along with some calculated metrics, are then displayed on a web page in tabular form.
+Users can input their selection criteria, including peak speed, peak torque input, peak acceleration, and maximum inertia, and the application cross-references these inputs with a comprehensive database. Leveraging a backend Python program, the application calculates the speed and torque percentages for the servo and gearbox, as well as the inertia ratio, based on user inputs. Combinations that meet specific conditions, such as maximum speed and torque percentages and a desired inertia ratio, are displayed in a user-friendly table format. Furthermore, the web application considers cost as a crucial factor in the selection process. Gearbox-Servo Selection Web Application significantly improves upon existing tools by automating and simplifying the process of finding the ideal servo and gearbox combination, empowering engineers to optimize mechanical performance and efficiency.
 
 ## Features
 
-- Users can input their selection criteria including: peak speed, peak torque input, peak acceleration, and maximum inertia.
-- The application cross-references these inputs with a database of gearbox and servo systems.
-- The application then calculates the speed and torque percentages for the servo and gearbox, as well as the inertia ratio, based on the user's inputs.
-- The application checks for combinations of gearboxes and servos that meet certain conditions (e.g., certain maximum percentages for speed and torque, and a maximum inertia ratio).
-- Suitable combinations are displayed in a table, along with their calculated metrics and total cost.
+The Gearbox-Servo Selection Web Application offers the following features:
+
+- **User Input Criteria**: Users can input their selection criteria, including peak speed, peak torque input, peak acceleration, and maximum inertia, into an intuitive web form.
+- **Intelligent Cross-Referencing**: The application cross-references the user inputs with a comprehensive database of gearbox and servo systems to identify suitable combinations.
+- **Automated Calculations**: Leveraging a backend Python program, the application automatically calculates the speed and torque percentages for the servo and gearbox, as well as the inertia ratio, based on the user's input criteria.
+- **Condition Checks**: The application performs condition checks on the combinations, ensuring they meet specific requirements such as maximum speed and torque percentages and a desired inertia ratio.
+- **Interactive Results Display**: Suitable combinations of gearboxes and servos are displayed in a tabular format on a web page, providing users with detailed metrics and information.
+- **Cost Consideration**: The web application incorporates cost as an important factor in the selection process, allowing users to evaluate and compare the financial aspects of different combinations.
+- **Intuitive User Experience**: The web application offers a user-friendly interface that simplifies the process of selecting suitable servo and gearbox systems.
+- **Optimization and Efficiency**: By automating the selection process, engineers can optimize mechanical performance and efficiency, saving time and effort in the design phase.
 
 ## Usage
 
